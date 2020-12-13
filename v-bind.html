@@ -1,0 +1,15 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+    <p :title="message1">{{ message }}</p>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!',
+          message1: '页面加载于 ' + new Date().toLocaleString()
+        }
+      })
+</script>
+  

@@ -1,0 +1,18 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+    <p>{{ message }}</p>
+    <input v-model="message" placeholder="输入数据">
+    <p>{{ message2 }}</p>
+    <input v-model.lazy="message2" placeholder="输入数据">
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!',
+          message2: 'Hello Vue!'
+        }
+      })
+</script>
+  

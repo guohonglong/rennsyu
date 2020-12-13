@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+    <p v-if="show">{{ clickNumber }}</p>
+    <button v-on:click.stop="count">奇数显示</button>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+          clickNumber: 1,
+          show: true
+        }
+        ,
+        methods: {
+          count: function () {
+            this.clickNumber += 1,
+            this.show=!this.show
+          }
+        }
+      })
+</script>
+  

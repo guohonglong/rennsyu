@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app-4">
+  <ol>
+    <li v-for="student in students">
+      {{ student.text }}
+    </li>
+  </ol>
+</div>
+
+<script>
+    var app4 = new Vue({
+      el: '#app-4',
+      data: {
+        students: [
+          { text: '张三 100' },
+          { text: '李四 90' },
+          { text: '王五 80' }
+        ]
+      }
+    })
+</script>
+  
